@@ -437,9 +437,12 @@ img {
   border-radius: 4px;
 }
 
-.filter-btn:hover {
+.filter-btn:hover,
+.filter-btn:focus {
   background: var(--ocean);
   color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* ----------------- PROJECT ---------------------- */
@@ -449,23 +452,37 @@ img {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  background-color: var(--cloud);
+  /* background-color: var(--cloud); */
 }
 
 .portfolio-items {
   flex-basis: calc((100% - 48px) / 3);
 }
 
-.portfolio-link {
-  /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08); */
-}
+/* .portfolio-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-top: none;
+  border-left: 1px solid var(--cornflover);
+  border-right: 1px solid var(--cornflover);
+  border-bottom: 1px solid var(--cornflover);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+} */
 
 .list-portfolio-item:hover,
-.list-portfolio-item:hover {
+.list-portfolio-item:focus {
   border: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
+/* .portfolio-link:hover,
+.portfolio-link:focus {
+  border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+} */
 
 .list-portfolio-item {
   padding-top: 32px;
@@ -478,6 +495,6 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-suptitle {
+/* .portfolio-suptitle {
   color: #2e2f42;
-}
+} */
